@@ -5,6 +5,7 @@ import {
   ImageSourcePropType,
   Pressable,
   StyleSheet,
+  Vibration,
   Text,
   View,
 } from 'react-native';
@@ -57,6 +58,8 @@ function App(): React.JSX.Element {
         setDiceImage(DiceOne);
         break;
     }
+
+    Vibration.vibrate(1);
   };
 
   return (
